@@ -1,0 +1,15 @@
+@import 'mm-elevation-shadows/src/styles/mm-elevation-shadows';
+
+.mm-card {
+  @apply --shadows-elevation-2-resting;
+
+  background-color: #fff;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+
+  & .mm-primary-title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+}
