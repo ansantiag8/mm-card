@@ -5,11 +5,10 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
   devServer: {
-    contentBase: path.resolve(__dirname, './'),
-    hot: true,
+    contentBase: path.resolve(__dirname, '../'),
   },
-  devtool: 'inline-source-map',
-  mode: 'production',
+  devtool: 'eval',
+  mode: 'development',
   module: {
     rules: [
       {
