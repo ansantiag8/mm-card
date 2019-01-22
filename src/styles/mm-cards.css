@@ -1,0 +1,45 @@
+:root {
+  --mainColor: #fff;
+  --margin: 16px;
+  --n-margin: -16px;
+  --margins: 0 var(--margin);
+  --radius: 4px;
+}
+
+.mm-card {
+  background-color: var(--mainColor);
+  border-radius: var(--radius);
+  padding: var(--margins);
+  width: 312px;
+  z-index: 1;
+
+  & .mm-actions {
+    margin: 0 var(--n-margin);
+  }
+
+  & .mm-primary-title {
+    align-items: center;
+    display: flex;
+    height: 72px;
+
+    & .thumbnail {
+      height: 40px;
+      font-size: 40px;
+      width: 40px;
+    }
+
+    & .thumbnail + .header-text {
+      margin-left: var(--margin);
+    }
+  }
+
+  & .mm-rich-media {
+    background-image: url("/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: var(--radius) var(--radius) 0 0;
+    height: 194px;
+    margin: 0 var(--n-margin);
+    width: 344px;
+  }
+}

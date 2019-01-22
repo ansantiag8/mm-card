@@ -1,0 +1,15 @@
+:root {
+  --margin: 16px;
+  --radius: 4px;
+}
+
+.mm-button {
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  height: 36px;
+  min-width: 64px;
+  padding: var(--margins);
+  z-index: 2;
+}
