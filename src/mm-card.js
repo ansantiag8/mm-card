@@ -1,2 +1,1 @@
-import 'mm-elevation-shadows';
-import './styles/mm-card.css';
+import './styles/mm-card.scss';

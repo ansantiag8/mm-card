@@ -1,0 +1,29 @@
+$columns: #455A64;
+$gutters: 24px;
+$margins: 16px;
+$without-margins: -16px;
+
+.mm-layout {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 24px;
+  padding: 0 $margins;
+}
+
+.mm-layout-card {
+  // @inherit: .mm-layout;
+
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 194px auto;
+}
+
+.mm-lcontent-all {
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+
+.mm-lcontent-full {
+  // @inherit: .mm-lcontent-all;
+
+  margin: 0 $without-margins;
+}
